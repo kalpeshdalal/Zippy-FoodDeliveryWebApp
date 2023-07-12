@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: aliceblue;
+  }
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("C:/Users/kalpe/OneDrive/Desktop/practise/start-react/src/components/SignupSignin/homebg.png");
+    opacity: 0.03;
+    z-index: -1;
+  }
+  
+  .middle-container {
+    width: 30%;
+    background-color: rgb(65, 1, 100);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .head {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .login {
+    font-size: 30px;
+    font-weight: 0px;
+    margin-top: 15px;
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    float: right;
+    border: none;
+    font-size: larger;
+    color: aliceblue;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inputs input {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .in-btn {
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    color: blueviolet;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .in-btn:hover {
+    color: white;
+    background-color: rgb(35, 1, 39);
+    border: 2px solid rgb(35, 1, 39);
+  }
+  
+  .line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .white-line {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.581);
+    width: 75%;
+  }
+  
+  .google-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .google-btn button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .footer {
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 3px;
+  }
+  
+  .footer span {
+    font-size: medium;
+  }
+  
+  .footer a {
+    font-size: medium;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  .footer a:hover {
+    text-decoration: none;
+    color: blueviolet;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 900px) {
+    .middle-container {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .middle-container {
+      width: 88%;
+    }
+  
+    .inputs input {
+      font-size: 16px;
+    }
+  
+    .google-btn button {
+      font-size: 16px;
+    }
+  
+    .in-btn {
+      font-size: 16px;
+    }
+  }
+  

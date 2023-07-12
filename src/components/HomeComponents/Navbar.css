@@ -1,0 +1,191 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+button{
+  cursor: pointer;
+}
+
+:root {
+  --mainColor: #ffffff;
+  --mainColorLight: #ffffff;
+  --secondaryColor: #84048d;
+  --textColor: #000000;
+}
+
+header div {
+  padding: 25px;
+  width: 250px;
+  height: 70px;
+}
+
+header {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0 1rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+}
+
+nav .btn {
+  margin: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--textColor);
+  text-decoration: none;
+  font-size: large;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+}
+
+nav .btn p {
+  padding: 15px;
+}
+
+nav .btn:hover {
+  color: var(--secondaryColor);
+}
+
+.options-bar {
+  /* visibility: hidden; */
+  display: none;
+}
+
+header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  /* visibility: hidden; */
+  display: none;
+  opacity: 0;
+  font-size: 1.8rem;
+}
+
+header div,
+nav {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1100px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 1.5rem 0 0rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+  }
+
+  header .nav-btn {
+    /* visibility: visible; */
+	display: block;
+    opacity: 1;
+  }
+
+  header nav {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+  }
+
+  header div {
+    padding: 10px;
+    width: 250px;
+    height: 70px;
+  }
+
+  header .responsive_nav {
+    transform: translateY(100vh);
+  }
+
+  nav .nav-close-btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  .options-bar {
+	display: block;
+    /* visibility: visible; */
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: var(--mainColor);
+  }
+
+  .options-bar button {
+    padding: 10px;
+    border-radius: 100px;
+    border: none;
+    background-color: transparent;
+    transition: 0.5s;
+  }
+
+  .options-bar button:hover {
+    background-color: #dbdbdb;
+  }
+
+  .options-bar svg {
+    font-size: 1.5rem;
+    color: var(--textColor);
+  }
+}
+
+div .search-bar {
+  /* Add your styles for the search bar */
+  /* For example: */
+  padding: 10px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+
+  background-color: transparent;
+  color: var(--textColor);
+  font-size: large;
+}
+div .search-bar button {
+  padding: 14px;
+  border-radius: 0px 25px 25px 0px;
+  border: 1px solid rgb(81, 4, 87);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+div .search-bar-input {
+  border: 1px solid rgb(81, 4, 87);
+  padding: 15px;
+  width: 420px;
+  border-radius: 25px 0px 0px 25px;
+}
